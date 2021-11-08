@@ -1,4 +1,5 @@
 import enum
+import unittest
 
 @enum.unique
 class GAME_MODE(enum.Enum):
@@ -31,4 +32,12 @@ def solitaire():
     # Update and write stats back
     update_stats()
 
-solitaire()
+class TestSolitaire(unittest.TestCase):
+
+    def test_solitaire(self):
+        # TODO - tests
+        self.assertTrue(True)
+
+if __name__ == '__main__':
+    # Uncomment to run tests - unittest.main()
+    solitaire()
